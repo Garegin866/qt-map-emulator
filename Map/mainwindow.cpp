@@ -50,6 +50,7 @@ void MainWindow::on_btn_set_by_key_clicked() {
     QString value = ui->txt_elem_value->text();
 
     map_model_.items[key.toStdString()] = value.toStdString();
+    map_model_.iterator = map_model_.items.begin();
 \
     ApplyModel();
 }
